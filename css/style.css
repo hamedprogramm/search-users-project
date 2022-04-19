@@ -112,7 +112,7 @@ h6 {
 .users {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* align-items: center; */
   flex-wrap: wrap;
   padding: 20px;
   margin-top: 10px;
@@ -127,7 +127,7 @@ h6 {
 .user {
   cursor: pointer;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
   width: 300px;
@@ -176,6 +176,32 @@ h6 {
     width: 600px;
   }
   .usersPart {
-      width: 400px;
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 431px) {
+  .users {
+    width: 300px;
+  }
+  .profile {
+    width: 70px;
+    height: 70px;
+  }
+  .name,
+  .skill {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 283px) {
+  .users {
+    width: 250px;
+  }
+  .user {
+    padding: 10px;
+    height: 80px;
+  }
+  .name,
+  .skill {
+    font-size: 13px;
   }
 }
