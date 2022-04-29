@@ -29,7 +29,6 @@ h6 {
   height: 100vh;
 }
 .box {
-  background-color: #ccc;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,7 +91,6 @@ h6 {
   width: 500px;
   border: 0;
   outline: 0;
-  background-color: white;
 }
 .usersPart {
   display: flex;
@@ -162,6 +160,11 @@ h6 {
     margin-top: 50px;
   }
 }
+@media only screen and (max-width: 681px) {
+  .search-input {
+    width: 100%;
+  }
+} 
 @media only screen and (max-width: 751px) {
   .users {
     width: 700px;
@@ -179,6 +182,16 @@ h6 {
   }
   .usersPart {
     width: 400px;
+  }
+  .user {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 664px) {
+  .users {
+    width: 300px;
   }
 }
 @media only screen and (max-width: 431px) {
